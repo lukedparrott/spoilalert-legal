@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SpoilAlert</title>
+    <style>
+        :root {
+            --primary: #10B981;
+            --text-main: #1F2937;
+            --text-muted: #4B5563;
+            --bg-page: #F9FAFB;
+            --bg-card: #FFFFFF;
+            --border: #E5E7EB;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #34D399;
+                --text-main: #F9FAFB;
+                --text-muted: #9CA3AF;
+                --bg-page: #111827;
+                --bg-card: #1F2937;
+                --border: #374151;
+            }
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        .effective-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="effective-date">Effective Date: October 24, 2026 • App: SpoilAlert</div>
+
+        <p>Your privacy is fundamental to our mission. <strong>SpoilAlert</strong> is designed from the ground up to respect your data ownership and minimize data collection. We do not track you across apps, sell your data, or use advertising identifiers.</p>
+
+        <h2>1. Data Stored on Your Device (Local Storage)</h2>
+        <p>All pantry and grocery inventory items, shelf-life dates, consumption logs, and settings are stored exclusively on your device using Apple's <strong>SwiftData</strong> framework. We do not operate external database servers containing your personal kitchen records.</p>
+
+        <h2>2. Camera & OCR Processing</h2>
+        <p>SpoilAlert requests camera access solely to:</p>
+        <ul>
+            <li>Scan grocery barcodes (EAN-8, EAN-13, UPC-E) using Apple's native <strong>VisionKit</strong>.</li>
+            <li>Scan printed package expiration dates and grocery receipts using Apple's on-device <strong>Vision</strong> text recognition engine.</li>
+        </ul>
+        <p>All camera analysis takes place entirely in real time on your iPhone. Video feeds, camera frames, and packaging images are never saved to external servers or transmitted off your device.</p>
+
+        <h2>3. Third-Party Service Queries</h2>
+        <ul>
+            <li><strong>Open Food Facts API:</strong> When you scan a product barcode, the app sends only the anonymous numerical barcode string to the public Open Food Facts API (<code>world.openfoodfacts.org</code>) to retrieve product descriptions, categories, and shelf-life suggestions. No personal identity, user account, or device identifier is attached to these queries.</li>
+            <li><strong>Apple StoreKit:</strong> If you purchase a SpoilAlert Pro subscription, payment processing and receipt verification are handled directly by Apple Inc. through StoreKit 2. We do not receive or store your credit card or financial details.</li>
+        </ul>
+
+        <h2>4. Push & Local Notifications</h2>
+        <p>SpoilAlert schedules freshness alerts locally on your device at 9:00 AM (3 days prior, 1 day prior, and day of expiration). These notifications are generated locally via iOS <code>UserNotifications</code> without requiring a remote notification server.</p>
+
+        <h2>5. Children's Privacy</h2>
+        <p>Our app does not knowingly collect or solicit personal information from children under the age of 13. The application is suitable for general audiences.</p>
+
+        <h2>6. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+        <h2>7. Contact & Support</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:developer@spoilalert.app">developer@spoilalert.app</a><br>
+        <strong>Support Center:</strong> <a href="support.html">SpoilAlert Support</a></p>
+
+        <div class="footer">
+            &copy; 2026 SpoilAlert. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
